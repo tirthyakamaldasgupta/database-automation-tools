@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    platform: ${DOCKER_PLATFORM}
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
+    ports:
+      - "${DOCKER_PORT}:1433"
+    volumes:
+      - ${DATA_PATH}:/var/opt/mssql/data
+      - ${LOG_PATH}:/var/opt/mssql/log
+      - ${SECRETS_PATH}:/var/opt/mssql/secrets
+    container_name: mssql-test-container
+    hostname: mssql-test-host
