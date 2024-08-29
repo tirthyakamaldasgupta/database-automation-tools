@@ -33,8 +33,7 @@ SECRETS_PATH=/path/to/your/secrets_directory
 
 Here is an example with actual values filled in:
 
-```
-ini
+```ini
 # .env file
 
 # SQL Server Administrator Password
@@ -47,9 +46,9 @@ DOCKER_PLATFORM=linux/amd64
 DOCKER_PORT=1433
 
 # Host directories for data, logs, and secrets
-DATA_PATH=/Users/yourusername/Projects/mssql-data
-LOG_PATH=/Users/yourusername/Projects/mssql-logs
-SECRETS_PATH=/Users/yourusername/Projects/mssql-secrets
+DATA_PATH=/Users/tirthyakamaldasgupta/Downloads/Projects/Test/mssql-test-container-data/data
+LOG_PATH=/Users/tirthyakamaldasgupta/Downloads/Projects/Test/mssql-test-container-data/log
+SECRETS_PATH=/Users/tirthyakamaldasgupta/Downloads/Projects/Test/mssql-test-container-data/secrets
 ```
 
 ## Running the Container
